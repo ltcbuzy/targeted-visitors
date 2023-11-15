@@ -1,0 +1,21 @@
+package main
+
+import (
+    "fmt"
+
+    "github.com/ltcbuzy/targeted-visitors"
+)
+
+func main() {
+    // Get incredible offers
+    offers, err := targeted-visitors.IncredibleOffers() // []IncredibleOffer, error
+    fmt.Printf("%+v\n", offers)
+
+    // Search for a product by a string keyword
+    searchResult, err := targeted-visitors.Search("case-logic-dlbp") // SearchResult, error
+    fmt.Printf("%+v\n", searchResult)
+
+    // Get details of a product by ID
+    productByID, err := targeted-visitors.GetProductByID(6071) // ProductByID, error
+    fmt.Printf("%+v\n", productByID)
+}
