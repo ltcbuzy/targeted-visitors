@@ -35,7 +35,15 @@ Before you begin, ensure you have the following installed:
 ### Install Dependencies:
 npm install
 ### Configure Environment Variables:
+### Code Structure
 
+    src/ - Contains the source code of the application.
+        routes/ - Define your API routes here.
+        controllers/ - Implement business logic.
+        models/ - Define data models.
+        middlewares/ - Add middleware functions.
+    public/ - Static assets (if applicable).
+    views/ - Frontend views (if applicable).
 Create a .env file in the root directory and add your configuration:
 PORT=3000
 DATABASE_URL=mongodb://localhost:27017/targeted_visitors
@@ -44,8 +52,24 @@ SECRET_KEY=mysecretkey
 
 ### Run the Application:
 npm start
-    Visit http://localhost:3000 in your browser.
+NPM Scripts
 
+We use npm scripts for various tasks. Here are some useful commands:
+
+    npm start: Run the application.
+    npm test: Run tests.
+    npm run lint: Lint the code.
+    Visit http://localhost:3000 in your browser.
+### Version Control
+
+We use Git for version control. Here are some useful commands:
+
+    git pull origin main: Fetch the latest changes from the remote repository.
+    git branch feature-branch: Create a new branch for a feature.
+    git checkout feature-branch: Switch to the feature branch.
+    git add .: Stage changes for commit.
+    git commit -m "Your commit message": Commit changes.
+    git push origin feature-branch: Push changes to the remote repository.
 ### Usage
 
     Explore Services:
